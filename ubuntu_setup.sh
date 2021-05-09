@@ -41,7 +41,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
 source  ~/.local/bin/virtualenvwrapper.sh
-# Important: the virtualenvwrapper.sh, virtualenv script can also be in `/usr/local/bin`
+# Important: the virtualenv and virtualenvwrapper.sh script can also be in `/usr/local/bin`
 # Check before making changes to the .*rc file.
 '''
 
