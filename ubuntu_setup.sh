@@ -53,3 +53,17 @@ sudo apt install terminator
 #### Chrome ####
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+#### Docker ####
+# Install docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+
+# NOTE: replace ```  $(lsb_release -cs) ---> focal  ```, if using mint 20 or any other "Ubuntu 20 like" OSes
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo usermod -aG docker ENTER_USERNAME  # IMPORTANT to change this
