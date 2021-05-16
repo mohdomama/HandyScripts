@@ -66,4 +66,5 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo usermod -aG docker ENTER_USERNAME  # IMPORTANT to change this
+sudo usermod -aG docker <Your Username> # Run docker without sudo
+# Important: Restart/LogOut after this
